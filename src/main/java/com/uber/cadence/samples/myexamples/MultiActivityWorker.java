@@ -11,7 +11,7 @@ public class MultiActivityWorker {
 
   public static void main(String[] args) {
 
-    Worker.Factory factory = new Worker.Factory(DOMAIN);
+    Worker.Factory factory = new Worker.Factory(args[0], Integer.parseInt(args[1]), DOMAIN);
 
     final Worker workerForFirstTaskList = factory.newWorker(FIRST_TASK_LIST);
     final Worker workerForSecondTaskList = factory.newWorker(SECOND_TASK_LIST);

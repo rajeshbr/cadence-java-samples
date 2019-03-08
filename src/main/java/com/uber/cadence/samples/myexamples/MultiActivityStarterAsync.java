@@ -18,7 +18,7 @@ public class MultiActivityStarterAsync {
 
   public static void main(String[] args) throws Exception {
 
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 4000; i++) {
       System.out.println("Loop count : " + i);
       Record rec = new Record();
       runWorkflow(rec, i);
